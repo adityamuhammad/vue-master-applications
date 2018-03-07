@@ -8,22 +8,21 @@
 </head>
 <body>
     <div id="app">
-        <div
-            v-bind:title="randNum"
-            v-if ="shown"
-        >
-            hover over me your random number
-        </div>
+      <div
+        v-bind:title="randNum"
+        v-if ="shown"
+      >
+        hover over me your random number
+      </div>
     </div>
   <script>
-      var app = new Vue({
-          el : '#app',
-          data :  {
-              randNum : Math.floor(Math.random() * 50) + 1,
-              shown : false
-          }
-      })
-
+    var app = new Vue({
+      el : '#app',
+      data :  {
+        randNum : Math.floor(Math.random() * 50) + 1,
+        shown : false
+      }
+    })
   </script>
 </body>
 </html>

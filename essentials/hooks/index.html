@@ -8,25 +8,24 @@
 </head>
 <body>
   <div id="app">
-      <div> {{ count }}</div>
-      <button class="vue-btn" @click="increment">Increment</button>
+    <div> {{ count }}</div>
+    <button class="vue-btn" @click="increment">Increment</button>
   </div>
   <script>
-      var app = new Vue({
-          el : '#app',
-          data: {
-                count: 0
-          },
-          methods: {
-              increment(){
-                  this.count++
-              }
-          },
-          updated(){
-              console.log(`this.count`, this.count)
-          }
-      })
-
+    var app = new Vue({
+      el : '#app',
+      data: {
+        count: 0
+      },
+      methods: {
+        increment(){
+          this.count++
+        }
+      },
+      updated(){
+        console.log(`this.count`, this.count)
+      }
+    })
   </script>
 </body>
 </html>
