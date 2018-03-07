@@ -4,9 +4,15 @@ body {
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkir-font-smoothing: antialiased;
-  -noz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
   margin-top: 60px;
+}
+
+.character-card {
+  border: 2px solid #4FC08D;
+  border-radius: 4px;
+  cursor: pointer;
 }
